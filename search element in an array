@@ -1,16 +1,11 @@
 class Solution {
     public int search(int[] nums, int target) {
-        int num=0,i,store=0;
-        for( i=0;i<nums.length;i++){
-            if(target==nums[i]){
-                num+=1;
-               store= i;
-            }
-        }
-        if(num==0){
-            store=-1;
-        }
-       
-     return store;   
+        int ans=-1;
+      for(int i=0;i<nums.length;i++){
+          if(nums[i]==target){
+            ans=i;
+          }
+      } 
+      return ans; 
     }
 }
